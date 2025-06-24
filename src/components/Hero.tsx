@@ -13,7 +13,7 @@ export function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-amber-100 text-amber-800 text-sm font-medium mb-8">
             <span className="w-2 h-2 bg-amber-500 rounded-full mr-2 animate-pulse"></span>
-            New: White Label Solution Available
+            New: PDF Invoice Generation & WhatsApp Sharing
           </div>
 
           {/* Main Heading */}

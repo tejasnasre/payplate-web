@@ -14,9 +14,11 @@ export function Navigation() {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">P</span>
-              </div>
+              <img 
+                src="/lovable-uploads/3e862d8a-1222-4c3f-b363-ab8584842a40.png" 
+                alt="PayPlate Logo" 
+                className="w-8 h-8"
+              />
               <span className="text-xl font-bold text-gray-900">PayPlate</span>
             </Link>
           </div>
