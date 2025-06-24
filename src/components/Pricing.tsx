@@ -5,56 +5,46 @@ import { Check } from "lucide-react";
 
 const plans = [
   {
-    name: "Starter",
-    price: "₹0",
-    period: "Forever Free",
-    description: "Perfect for small restaurants just getting started",
+    name: "White Label App",
+    price: "₹8,999",
+    period: "one-time",
+    description: "Complete restaurant invoice management app with your branding",
     features: [
-      "Up to 50 invoices per month",
-      "Basic menu management",
-      "Email OTP authentication",
-      "PDF invoice generation",
-      "WhatsApp sharing",
-      "Basic analytics"
-    ],
-    cta: "Start Free",
-    popular: false
-  },
-  {
-    name: "Professional",
-    price: "₹999",
-    period: "per month",
-    description: "Ideal for growing restaurants with more customers",
-    features: [
-      "Unlimited invoices",
-      "Advanced menu management",
+      "Full source code included",
+      "Your brand name & logo",
+      "Invoice generation & PDF export",
+      "WhatsApp integration",
+      "Menu management system",
       "Payment tracking",
+      "Basic analytics dashboard",
+      "Mobile responsive design",
+      "Email OTP authentication",
       "Transaction history",
-      "Advanced analytics",
-      "Custom branding",
-      "Priority support",
-      "API access"
+      "30 days support included"
     ],
-    cta: "Start 14-day trial",
-    popular: true
+    cta: "Get Your App",
+    popular: false
   },
   {
-    name: "Enterprise",
-    price: "₹2,999",
-    period: "per month",
-    description: "For restaurant chains and large establishments",
+    name: "Custom Solution",
+    price: "₹12,999",
+    period: "one-time",
+    description: "Fully customized app with additional features and integrations",
     features: [
-      "Everything in Professional",
+      "Everything in White Label",
+      "Custom feature development",
+      "Advanced analytics & reports",
       "Multi-location support",
-      "Advanced reporting",
       "Custom integrations",
-      "Dedicated account manager",
-      "White-label solution",
-      "24/7 phone support",
-      "Training & onboarding"
+      "Advanced payment gateways",
+      "Cloud deployment setup",
+      "Database configuration",
+      "90 days support included",
+      "Training & documentation",
+      "Priority development queue"
     ],
-    cta: "Contact Sales",
-    popular: false
+    cta: "Get Custom Solution",
+    popular: true
   }
 ];
 
@@ -68,12 +58,12 @@ export function Pricing() {
             Simple, Transparent Pricing
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Choose the perfect plan for your restaurant. Start free and upgrade as you grow.
+            Get your own restaurant invoice management app. Choose between ready-to-deploy solution or fully customized development.
           </p>
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {plans.map((plan, index) => (
             <Card 
               key={index} 
@@ -136,20 +126,20 @@ export function Pricing() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
             <div>
-              <h4 className="font-semibold text-gray-900 mb-2">Can I change plans anytime?</h4>
-              <p className="text-gray-600">Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately.</p>
+              <h4 className="font-semibold text-gray-900 mb-2">Do I get the source code?</h4>
+              <p className="text-gray-600">Yes, you get the complete source code for both packages with full ownership rights.</p>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900 mb-2">Is there a setup fee?</h4>
-              <p className="text-gray-600">No setup fees, no hidden charges. Pay only for what you use with transparent pricing.</p>
+              <h4 className="font-semibold text-gray-900 mb-2">How long does delivery take?</h4>
+              <p className="text-gray-600">White label: 3-5 days. Custom solution: 7-14 days depending on requirements.</p>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900 mb-2">What payment methods do you accept?</h4>
-              <p className="text-gray-600">We accept all major credit cards, debit cards, UPI, and net banking.</p>
+              <h4 className="font-semibold text-gray-900 mb-2">Can I resell the app?</h4>
+              <p className="text-gray-600">Yes, you can resell or use the app commercially without any restrictions.</p>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900 mb-2">Do you offer customer support?</h4>
-              <p className="text-gray-600">Yes, we provide email support for all plans and phone support for Enterprise customers.</p>
+              <h4 className="font-semibold text-gray-900 mb-2">What support is included?</h4>
+              <p className="text-gray-600">Technical support, bug fixes, and deployment assistance for the specified period.</p>
             </div>
           </div>
         </div>
