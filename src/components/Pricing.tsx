@@ -1,6 +1,11 @@
-
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Check } from "lucide-react";
 
 const plans = [
@@ -8,7 +13,8 @@ const plans = [
     name: "White Label App",
     price: "₹8,999",
     period: "one-time",
-    description: "Complete restaurant invoice management app with your branding",
+    description:
+      "Complete restaurant invoice management app with your branding",
     features: [
       "Full source code included",
       "Your brand name & logo",
@@ -20,16 +26,17 @@ const plans = [
       "Mobile responsive design",
       "Email OTP authentication",
       "Transaction history",
-      "30 days support included"
+      "30 days support included",
     ],
     cta: "Get Your App",
-    popular: false
+    popular: false,
   },
   {
     name: "Custom Solution",
     price: "₹12,999",
     period: "one-time",
-    description: "Fully customized app with additional features and integrations",
+    description:
+      "Fully customized app with additional features and integrations",
     features: [
       "Everything in White Label",
       "Custom feature development",
@@ -41,11 +48,11 @@ const plans = [
       "Database configuration",
       "90 days support included",
       "Training & documentation",
-      "Priority development queue"
+      "Priority development queue",
     ],
     cta: "Get Custom Solution",
-    popular: true
-  }
+    popular: true,
+  },
 ];
 
 export function Pricing() {
@@ -58,19 +65,20 @@ export function Pricing() {
             Simple, Transparent Pricing
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get your own restaurant invoice management app. Choose between ready-to-deploy solution or fully customized development.
+            Get your own restaurant invoice management app. Choose between
+            ready-to-deploy solution or fully customized development.
           </p>
         </div>
 
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {plans.map((plan, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className={`relative ${
-                plan.popular 
-                  ? 'border-amber-500 shadow-xl scale-105' 
-                  : 'border-gray-200'
+                plan.popular
+                  ? "border-amber-500 shadow-xl scale-105"
+                  : "border-gray-200"
               } hover:shadow-lg transition-all duration-300`}
             >
               {plan.popular && (
@@ -80,20 +88,22 @@ export function Pricing() {
                   </span>
                 </div>
               )}
-              
+
               <CardHeader className="text-center pb-6">
                 <CardTitle className="text-2xl font-bold text-gray-900">
                   {plan.name}
                 </CardTitle>
                 <div className="mt-4">
-                  <span className="text-4xl font-bold text-gray-900">{plan.price}</span>
+                  <span className="text-4xl font-bold text-gray-900">
+                    {plan.price}
+                  </span>
                   <span className="text-gray-600 ml-2">/{plan.period}</span>
                 </div>
                 <CardDescription className="mt-4 text-gray-600">
                   {plan.description}
                 </CardDescription>
               </CardHeader>
-              
+
               <CardContent>
                 <ul className="space-y-3 mb-8">
                   {plan.features.map((feature, featureIndex) => (
@@ -103,45 +113,22 @@ export function Pricing() {
                     </li>
                   ))}
                 </ul>
-                
-                <Button 
-                  className={`w-full ${
-                    plan.popular 
-                      ? 'bg-amber-500 hover:bg-amber-600 text-white' 
-                      : 'bg-gray-900 hover:bg-gray-800 text-white'
-                  }`}
-                  size="lg"
-                >
-                  {plan.cta}
-                </Button>
+
+                <a href="https://tejasnasre.is-a.dev/">
+                  <Button
+                    className={`w-full ${
+                      plan.popular
+                        ? "bg-amber-500 hover:bg-amber-600 text-white"
+                        : "bg-gray-900 hover:bg-gray-800 text-white"
+                    }`}
+                    size="lg"
+                  >
+                    {plan.cta}
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* FAQ Section */}
-        <div className="mt-20 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8">
-            Frequently Asked Questions
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-2">Do I get the source code?</h4>
-              <p className="text-gray-600">Yes, you get the complete source code for both packages with full ownership rights.</p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-2">How long does delivery take?</h4>
-              <p className="text-gray-600">White label: 3-5 days. Custom solution: 7-14 days depending on requirements.</p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-2">Can I resell the app?</h4>
-              <p className="text-gray-600">Yes, you can resell or use the app commercially without any restrictions.</p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-2">What support is included?</h4>
-              <p className="text-gray-600">Technical support, bug fixes, and deployment assistance for the specified period.</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
