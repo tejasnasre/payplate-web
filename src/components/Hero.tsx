@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Play, ArrowRight } from "lucide-react";
+import { Play, ArrowRight, Shield, CheckCircle } from "lucide-react";
 
 export function Hero() {
   return (
@@ -27,18 +27,45 @@ export function Hero() {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-600 mb-6 max-w-4xl mx-auto leading-relaxed">
             Get your own branded restaurant invoice management app. Complete white label solution 
             with PDF generation, WhatsApp sharing, analytics, and more.
           </p>
 
+          {/* White Label Info */}
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 mb-10 max-w-4xl mx-auto border border-amber-200 shadow-lg">
+            <div className="flex items-center justify-center mb-4">
+              <CheckCircle className="h-6 w-6 text-green-500 mr-2" />
+              <h3 className="text-lg font-semibold text-gray-800">White Label Solution</h3>
+            </div>
+            <p className="text-gray-600 mb-4">
+              ✅ A fully developed product made by one company, that another company rebrands and sells as their own.
+            </p>
+            
+            {/* Legal Note */}
+            <div className="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg">
+              <div className="flex items-start">
+                <Shield className="h-5 w-5 text-amber-600 mr-2 mt-0.5" />
+                <div>
+                  <h4 className="font-semibold text-amber-800 mb-2">🔒 Legal Note</h4>
+                  <p className="text-sm text-amber-700 mb-2">You should always include a license agreement:</p>
+                  <ul className="text-sm text-amber-700 space-y-1">
+                    <li>✅ Allow only branded usage</li>
+                    <li>❌ No reselling of source code (unless allowed)</li>
+                    <li>✅ Limit to specific customers or markets</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <Button size="lg" className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 text-lg">
+            <Button size="lg" className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105">
               Get Your App
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" size="lg" className="border-amber-300 text-amber-700 hover:bg-amber-50 px-8 py-4 text-lg">
+            <Button variant="outline" size="lg" className="border-amber-300 text-amber-700 hover:bg-amber-50 px-8 py-4 text-lg hover:border-amber-400 transition-all duration-200">
               <Play className="mr-2 h-5 w-5" />
               Watch Demo
             </Button>
