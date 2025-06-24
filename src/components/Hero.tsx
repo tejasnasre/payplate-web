@@ -74,7 +74,7 @@ export function Hero() {
           {/* App Mockup Images in Column Layout */}
           <div className="relative max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Mobile App View */}
+              {/* Restaurant Profile Screen */}
               <div className="transform hover:scale-105 transition-transform duration-300">
                 <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
                   <div className="bg-gradient-to-r from-amber-500 to-orange-500 h-6 flex items-center px-4">
@@ -86,16 +86,16 @@ export function Hero() {
                   </div>
                   <div className="p-4">
                     <img 
-                      src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=600&fit=crop" 
-                      alt="PayPlate Mobile Interface"
+                      src="/lovable-uploads/f609a4bf-ea14-4fbd-8828-4bf25c78c727.png" 
+                      alt="Restaurant Profile Management"
                       className="w-full h-auto rounded-lg"
                     />
                   </div>
                 </div>
-                <p className="text-sm text-gray-600 mt-4 font-medium">Mobile Invoice Creation</p>
+                <p className="text-sm text-gray-600 mt-4 font-medium">Restaurant Profile</p>
               </div>
 
-              {/* Desktop Dashboard */}
+              {/* Invoice Creation Screen */}
               <div className="transform hover:scale-105 transition-transform duration-300">
                 <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
                   <div className="bg-gradient-to-r from-amber-500 to-orange-500 h-6 flex items-center px-4">
@@ -107,16 +107,16 @@ export function Hero() {
                   </div>
                   <div className="p-4">
                     <img 
-                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" 
-                      alt="PayPlate Dashboard Analytics"
+                      src="/lovable-uploads/7069521a-5971-4850-ad6a-9029e8de03b3.png" 
+                      alt="Invoice Creation Interface"
                       className="w-full h-auto rounded-lg"
                     />
                   </div>
                 </div>
-                <p className="text-sm text-gray-600 mt-4 font-medium">Analytics Dashboard</p>
+                <p className="text-sm text-gray-600 mt-4 font-medium">Invoice Creation</p>
               </div>
 
-              {/* Tablet Menu Management */}
+              {/* WhatsApp PDF Sharing */}
               <div className="transform hover:scale-105 transition-transform duration-300">
                 <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
                   <div className="bg-gradient-to-r from-amber-500 to-orange-500 h-6 flex items-center px-4">
@@ -128,13 +128,79 @@ export function Hero() {
                   </div>
                   <div className="p-4">
                     <img 
-                      src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=500&fit=crop" 
-                      alt="PayPlate Menu Management"
+                      src="/lovable-uploads/0d99c060-2dad-4ed6-a2d5-22a3e276455c.png" 
+                      alt="WhatsApp PDF Sharing"
+                      className="w-full h-auto rounded-lg"
+                    />
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 mt-4 font-medium">WhatsApp & PDF Sharing</p>
+              </div>
+            </div>
+
+            {/* Second Row of Mockups */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+              {/* Menu Management */}
+              <div className="transform hover:scale-105 transition-transform duration-300">
+                <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
+                  <div className="bg-gradient-to-r from-amber-500 to-orange-500 h-6 flex items-center px-4">
+                    <div className="flex space-x-1">
+                      <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <img 
+                      src="/lovable-uploads/c0532286-8d5e-4d69-9c1e-75b707b2bfaa.png" 
+                      alt="Menu Management System"
                       className="w-full h-auto rounded-lg"
                     />
                   </div>
                 </div>
                 <p className="text-sm text-gray-600 mt-4 font-medium">Menu Management</p>
+              </div>
+
+              {/* Transaction History */}
+              <div className="transform hover:scale-105 transition-transform duration-300">
+                <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
+                  <div className="bg-gradient-to-r from-amber-500 to-orange-500 h-6 flex items-center px-4">
+                    <div className="flex space-x-1">
+                      <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <img 
+                      src="/lovable-uploads/18e55846-81b0-4661-8e0e-4c928e34f2f5.png" 
+                      alt="Transaction History & Invoice Tracking"
+                      className="w-full h-auto rounded-lg"
+                    />
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 mt-4 font-medium">Transaction History</p>
+              </div>
+
+              {/* Analytics Dashboard */}
+              <div className="transform hover:scale-105 transition-transform duration-300">
+                <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden">
+                  <div className="bg-gradient-to-r from-amber-500 to-orange-500 h-6 flex items-center px-4">
+                    <div className="flex space-x-1">
+                      <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
+                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <img 
+                      src="/lovable-uploads/48bdd389-efda-47df-869e-8ad0526bbeb3.png" 
+                      alt="Business Analytics Dashboard"
+                      className="w-full h-auto rounded-lg"
+                    />
+                  </div>
+                </div>
+                <p className="text-sm text-gray-600 mt-4 font-medium">Analytics Dashboard</p>
               </div>
             </div>
             
