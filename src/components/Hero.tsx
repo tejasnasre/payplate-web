@@ -34,12 +34,12 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <a href="https://tally.so/r/wMl4xA">
+            <a href="https://expo.dev/artifacts/eas/oAjkubv5mn3MK1Pc9uY6VU.apk">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
               >
-                Join WaitList
+                Download Now
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </a>
