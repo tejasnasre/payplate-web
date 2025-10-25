@@ -34,7 +34,7 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <a href="https://github.com/tejasnasre/payplate-invoice-compass/releases/download/v1.0.0.0-beta/payplate-arm64-v8a.apk">
+            <a href="https://github.com/tejasnasre/payplate-web/releases/download/v1.0.0.0-beta/payplate-arm64-v8a.apk">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
