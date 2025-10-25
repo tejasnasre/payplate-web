@@ -1,73 +1,164 @@
-# Welcome to your Lovable project
+# PayPlate - Restaurant Invoice Management Made Simple
 
-## Project info
+PayPlate is a comprehensive restaurant invoice management web application that streamlines your restaurant's billing process. Create professional invoices, track payments, manage your menu, and grow your business with powerful analytics.
 
-**URL**: https://lovable.dev/projects/689525a9-8305-4be8-8fda-2db60e71f609
+![PayPlate](https://img.shields.io/badge/version-1.0.0--beta-orange)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+### 📄 Smart Invoice Creation
+- Create professional invoices with customer details, menu items, discounts, and taxes
+- Generate PDF invoices instantly
+- Share invoices directly via WhatsApp or other platforms
 
-**Use Lovable**
+### 💳 Payment Tracking
+- Track payment status for all invoices
+- View comprehensive transaction history
+- Never lose track of what's owed to your restaurant
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/689525a9-8305-4be8-8fda-2db60e71f609) and start prompting.
+### 📊 Powerful Analytics
+- Sales trends and performance metrics
+- Top-selling items analysis
+- Revenue growth tracking
+- Average order value insights with beautiful charts
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🍽️ Menu Management
+- Easily add, edit, and categorize menu items
+- Upload images for your menu items
+- Keep your digital menu always up to date
 
-**Use your preferred IDE**
+### 🏢 Business Profile
+- Set up your restaurant details and payment information
+- Upload your logo for professional branding
+- Customize your business settings
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 🔒 Secure Authentication
+- Email OTP-based login system
+- Enterprise-level data protection
+- Secure storage of business information
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 📱 Mobile Optimized
+- Fully responsive design
+- Works perfectly on phones, tablets, and desktops
+- Access PayPlate from any device
 
-Follow these steps:
+## 🚀 Getting Started
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Prerequisites
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Node.js (v18 or higher)
+- npm or yarn package manager
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Installation
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+1. Clone the repository:
+```bash
+git clone https://github.com/tejasnasre/payplate-web.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd payplate-web
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+4. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🛠️ Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start the development server
+- `npm run build` - Build the application for production
+- `npm run build:dev` - Build the application in development mode
+- `npm run lint` - Run ESLint to check code quality
+- `npm run preview` - Preview the production build locally
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🏗️ Technology Stack
 
-## What technologies are used for this project?
+- **Frontend Framework**: React 18
+- **Language**: TypeScript
+- **Build Tool**: Vite
+- **UI Components**: shadcn/ui + Radix UI
+- **Styling**: Tailwind CSS
+- **Routing**: React Router v6
+- **State Management**: TanStack Query (React Query)
+- **Form Handling**: React Hook Form + Zod
+- **Charts**: Recharts
+- **Icons**: Lucide React
 
-This project is built with:
+## 📦 Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+payplate-web/
+├── public/              # Static assets
+├── src/
+│   ├── components/      # React components
+│   │   ├── ui/         # Reusable UI components
+│   │   ├── Features.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Navigation.tsx
+│   │   └── ...
+│   ├── pages/          # Page components
+│   ├── hooks/          # Custom React hooks
+│   ├── lib/            # Utility functions
+│   ├── App.tsx         # Main App component
+│   └── main.tsx        # Application entry point
+├── index.html
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── vite.config.ts
+```
 
-## How can I deploy this project?
+## 🎨 White Label Solution
 
-Simply open [Lovable](https://lovable.dev/projects/689525a9-8305-4be8-8fda-2db60e71f609) and click on Share -> Publish.
+PayPlate offers a white label solution for businesses who want to rebrand and resell the application. With our white label package, you get:
 
-## Can I connect a custom domain to my Lovable project?
+- Complete source code
+- Customization with your own branding
+- Technical documentation
+- Deployment assistance
+- Commercial usage rights
 
-Yes, you can!
+[Learn more about our White Label Solution](https://tejasnasre.is-a.dev/)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📥 Download
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Download the Android app:
+- [PayPlate APK (ARM64)](https://github.com/tejasnasre/payplate-web/releases/download/v1.0.0.0-beta/payplate-arm64-v8a.apk)
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 📧 Contact
+
+For business inquiries, white label solutions, or support:
+
+- Website: [https://tejasnasre.is-a.dev/](https://tejasnasre.is-a.dev/)
+- WhatsApp: [Contact us](https://wa.me/qr/ANLJVTM5LUIOC1)
+
+## 🙏 Acknowledgments
+
+- Built with [shadcn/ui](https://ui.shadcn.com/)
+- Icons by [Lucide](https://lucide.dev/)
+- UI components powered by [Radix UI](https://www.radix-ui.com/)
